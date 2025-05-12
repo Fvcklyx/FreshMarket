@@ -13,3 +13,7 @@ loginBtn.addEventListener("click", () => {
 document.getElementById("next").addEventListener("click", () => {
   window.location.href = "Dashboard/dashboard.html";
 });
+
+document.getElementById("reload").addEventListener("click", () => {
+  window.location.href = "index.html";
+});
