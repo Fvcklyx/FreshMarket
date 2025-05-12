@@ -15,5 +15,5 @@ document.getElementById("next").addEventListener("click", () => {
 });
 
 document.getElementById("reload").addEventListener("click", () => {
-  window.location.href = "index.html";
+  window.location.reload();
 });
