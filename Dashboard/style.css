@@ -68,10 +68,12 @@ nav .nav-btn button.logout:hover {
 
 header {
   padding: 0 80px;
+  margin: 0 auto;
   height: calc(100vh - 80px);
+  width: max-content;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 48px;
 }
 
 header .left {
@@ -207,11 +209,19 @@ h2.separator {
 .box-product .product-review {
   padding: 40px 0;
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.box-product .product-review .product-item {
+  flex: 1;
+  max-width: 350px;
+  width: 100%;
 }
 
 .box-product .product-review .product-item img {
+  display: block;
+  margin: 0 auto;
   width: 234px;
   height: 234px;
   border-radius: 18px;
@@ -246,7 +256,7 @@ h2.separator {
   color: #2e7d32;
 }
 
-.box-product .product-review .product-item .product-desc > p {
+.box-product .product-review .product-item .product-desc>p {
   font-size: 12px;
   color: #989898;
 }
@@ -384,6 +394,7 @@ footer .right p {
 }
 
 @media screen and (max-width: 1200px) {
+
   nav,
   header,
   h2.separator,
@@ -505,6 +516,7 @@ footer .right p {
 }
 
 @media screen and (max-width: 768px) {
+
   nav,
   header,
   h2.separator,
